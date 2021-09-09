@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OfficialProfileActivity">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/photo"
+                            android:layout_width="260dp"
+                            android:layout_height="320dp"
+                            android:layout_marginTop="16dp"
+                            android:contentDescription="@string/photo"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/missing"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/subparty" />
+
+
+                        <ImageView
+                            android:id="@+id/logo"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:contentDescription="@string/logo"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/clear"
+                            app:layout_constraintBottom_toBottomOf="@+id/photo"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                        <TextView
+                            android:id="@+id/sublocation"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:background="#341963"
+                            android:text="@string/sublocation"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/subposition"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/subposition"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/sublocation" />
+
+                        <TextView
+                            android:id="@+id/subparty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/subparty"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/subname" />
+
+                        <TextView
+                            android:id="@+id/subname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/subname"
+                            android:textAlignment="center"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="30sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/subposition" />
+
+                        <TextView
+                            android:id="@+id/add"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="28dp"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/add"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/addtitle"
+                            app:layout_constraintTop_toBottomOf="@+id/photo" />
+
+                        <TextView
+                            android:id="@+id/addtitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/addtitle"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/photo" />
+
+                        <TextView
+                            android:id="@+id/phone"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/phone"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/add"
+                            app:layout_constraintTop_toBottomOf="@+id/add" />
+
+                        <TextView
+                            android:id="@+id/phonetitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/phonetitle"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp"
+                            app:layout_constraintStart_toStartOf="@+id/addtitle"
+                            app:layout_constraintTop_toBottomOf="@+id/add" />
+
+                        <TextView
+                            android:id="@+id/email"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/email"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/phone"
+                            app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+                        <TextView
+                            android:id="@+id/emailtitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/emailtitle"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp"
+                            app:layout_constraintStart_toStartOf="@+id/phonetitle"
+                            app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+                        <TextView
+                            android:id="@+id/web"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/web"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/email"
+                            app:layout_constraintTop_toBottomOf="@+id/email" />
+
+                        <TextView
+                            android:id="@+id/webtitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/webtitle"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp"
+                            app:layout_constraintStart_toStartOf="@+id/emailtitle"
+                            app:layout_constraintTop_toBottomOf="@+id/email" />
+
+                        <ImageView
+                            android:id="@+id/facebook"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:contentDescription="@string/facebook"
+                            android:onClick="facebookClicked"
+                            app:layout_constraintBottom_toBottomOf="@+id/twitter"
+                            app:layout_constraintStart_toStartOf="@+id/photo"
+                            app:srcCompat="@drawable/facebook" />
+
+                        <ImageView
+                            android:id="@+id/twitter"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="8dp"
+                            android:contentDescription="@string/twitter"
+                            android:onClick="twitterClicked"
+                            app:layout_constraintEnd_toStartOf="@+id/youtube"
+                            app:layout_constraintHorizontal_bias="0.487"
+                            app:layout_constraintStart_toEndOf="@+id/facebook"
+                            app:layout_constraintTop_toBottomOf="@+id/web"
+                            app:srcCompat="@drawable/twitter" />
+
+                        <ImageView
+                            android:id="@+id/youtube"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:contentDescription="@string/youtube"
+                            android:onClick="youTubeClicked"
+                            app:layout_constraintBottom_toBottomOf="@+id/twitter"
+                            app:layout_constraintEnd_toEndOf="@+id/photo"
+                            app:srcCompat="@drawable/youtube" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
